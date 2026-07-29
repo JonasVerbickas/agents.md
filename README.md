@@ -1,18 +1,6 @@
-# Agents Blueprint Repository
+# AGENTS.md
 
-This repository holds “blueprint” instruction files for different project types. Each blueprint contains setup, testing, formatting, and linting guidelines so that various AI agents (e.g., OpenAI Codex, Anthropic Claude) can consume them correctly.
+AGENTS.md in the root of the repo is universal -> to be kept in `~/.codex/AGENTS.md`.
 
-## Agent Compatibility
+`projectTypes` contains project specific AGENTS.md.
 
-Different AI agents expect different filenames when loading instructions:
-
-- **OpenAI Codex** expects a file named `AGENTS.md`.
-- **Anthropic Claude** expects a file named `claude.md`.
-
-To support both agents, you can duplicate or symlink your blueprint:
-
-```bash
-# for Node+TypeScript example
-cp projectTypes/nodeWithTypescript.md projectTypes/AGENTS.md
-cp projectTypes/nodeWithTypescript.md projectTypes/claude.md
-```
