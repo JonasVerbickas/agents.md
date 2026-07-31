@@ -1,5 +1,4 @@
-Maintain agentic documentation:
-- Update `AGENTS.md` when architecture patterns or technical conventions change.
+- Update `AGENTS.md` when architecture patterns or technical conventions change. `AGENTS.md` should never be longer than 40LOC. Don't ever remove instructions what tools should be used from `AGENTS.md` -- you should only add&remove architectural info specific for that repository to maintain it under 40LOC with highest impact info only.
 - Update `README.md` when human workflow is affected.
 - Use code comments sparingly -- only where it's necessary to understand intent for edge-cases & extremely complex logic.
 - Add comprehensive docstrings to all new functions & classes you add.
